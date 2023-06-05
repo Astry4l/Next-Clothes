@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap');
 .button {
     border-radius: 40px;
     padding: 3px, 10px, 3px, 10px;
@@ -17,4 +18,31 @@
     --main-text-color: #FFFFFF;
     --clicked-text-color: #6333FF;
     --second-text-color: #000000;
+    --coin-color: #392284;
+    --tag-color: #A4A4A4;
+    --add-tag-color: #EBEBEB;
+}
+
+.text-tag {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+}
+
+.text-body {
+    font-family: 'Prompt', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+}
+
+.text-title {
+    font-family: 'Prompt', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.02em;
 }
