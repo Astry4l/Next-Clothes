@@ -6,6 +6,11 @@
     color: var(--main-text-color);
 }
 
+.button:active {
+    background-color: var(--clicked-color);
+    color: var(--clicked-text-color);
+}
+
 :root {
     --main-color: #6333FF;
     --clicked-color: #DCD3FB;
