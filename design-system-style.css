@@ -1,7 +1,15 @@
-button {
+.primary {
     border-radius: 40px;
     padding: 3px, 10px, 3px, 10px;
     border-style: none;
-    background-color: #6333FF;
-    color: rgb(255, 255, 255);
+    background-color: var(--main-color);
+    color: var(--main-text-color);
+}
+
+:root {
+    --main-color: #6333FF;
+    --clicked-color: #DCD3FB;
+    --main-text-color: #FFFFFF;
+    --clicked-text-color: #6333FF;
+    --second-text-color: #000000;
 }
