@@ -40,6 +40,12 @@
     line-height: 20px;
 }
 
+.text-button {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
 .text-title {
     font-size: 20px;
     font-weight: 400;
