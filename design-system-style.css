@@ -1,9 +1,14 @@
-.primary {
+.button {
     border-radius: 40px;
     padding: 3px, 10px, 3px, 10px;
     border-style: none;
     background-color: var(--main-color);
     color: var(--main-text-color);
+}
+
+.button:active {
+    background-color: var(--clicked-color);
+    color: var(--clicked-text-color);
 }
 
 :root {
