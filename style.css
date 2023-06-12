@@ -24,3 +24,75 @@ text-decoration: none;
 border-style: none;
 
 }
+
+.tag{
+
+width: 22px;
+height: 15px;
+    
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 15px;
+letter-spacing: -0.02em;
+    
+color: #FFFFFF;
+    
+flex: none;
+order: 0;
+flex-grow: 0;
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 3px 10px;
+gap: 10px;
+    
+width: 42px;
+height: 21px;
+left: 99px;
+top: 542px;
+
+    
+background: #A4A4A4;
+border-radius: 40px;
+border-style: none;
+
+}
+
+.tag2{
+
+    width: 22px;
+    height: 15px;
+        
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+        
+    color: #FFFFFF;
+        
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 3px 10px;
+    gap: 10px;
+        
+    width: 42px;
+    height: 21px;
+    left: 99px;
+    top: 542px;
+    
+        
+    background: rgba(124, 124, 124, 1);
+    border-radius: 40px;
+    border-style: none;
+    
+    }
