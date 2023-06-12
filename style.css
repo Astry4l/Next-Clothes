@@ -1,5 +1,3 @@
-body{
-
 .button_filtre {
 
 font-family: 'Prompt', sans-serif;
@@ -20,5 +18,4 @@ flex: none;
 order: 0;
 flex-grow: 0;
 
-}
 }
