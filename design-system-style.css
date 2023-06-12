@@ -193,4 +193,45 @@
     border-style: none;
     
     }
+
+    body {
+        background-image: url(https://placekitten.com/200/300);
+      }
+      
+      
+      .navbar {
+        position:fixed;
+        bottom: 0;
+      }
+      
+      .bar {
+        height: 46px;
+        width: 288px;
+        background-image: url("data:image/svg+xml,%3Csvg width='288' height='46' viewBox='0 0 288 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M143.5 33C158.688 33 171 20.6878 171 5.5C171 3.61644 170.811 1.7771 170.45 0H268C279.046 0 288 8.95431 288 20V26C288 37.0457 279.046 46 268 46H20C8.9543 46 0 37.0457 0 26V20C0 8.95431 8.95431 0 20 0H116.55C116.189 1.7771 116 3.61644 116 5.5C116 20.6878 128.312 33 143.5 33Z' fill='black'/%3E%3C/svg%3E ");  background-position: 50% 50%;
+        border-radius: 1rem;
+        display: grid;
+        grid-template-columns: 1.2fr .1fr 1.7fr .1fr 1.2fr
+      }
+      
+      .icons {
+        display: inline-block;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .circle {
+        position: absolute;
+        top: -17px;
+        left: 50%;
+        margin-left: -22px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: #6333FF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     
