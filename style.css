@@ -1,0 +1,24 @@
+body{
+
+.button_filtre {
+
+font-family: 'Prompt', sans-serif;
+letter-spacing: -0.02em;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 2px 14px;
+gap: 10px;
+
+width: 59px;
+height: 27px;
+
+background: #DCD3FB;
+border-radius: 40px;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+}
