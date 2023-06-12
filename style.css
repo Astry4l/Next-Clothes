@@ -63,36 +63,78 @@ border-style: none;
 
 .tag2{
 
-    width: 22px;
-    height: 15px;
-        
-    font-family: 'Prompt';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 10px;
-    line-height: 15px;
-    letter-spacing: -0.02em;
-        
-    color: #FFFFFF;
-        
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+width: 22px;
+height: 15px;
     
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 3px 10px;
-    gap: 10px;
-        
-    width: 42px;
-    height: 21px;
-    left: 99px;
-    top: 542px;
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 15px;
+letter-spacing: -0.02em;
     
-        
-    background: rgba(124, 124, 124, 1);
-    border-radius: 40px;
-    border-style: none;
+color: #FFFFFF;
     
-    }
+flex: none;
+order: 0;
+flex-grow: 0;
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 3px 10px;
+gap: 10px;
+    
+width: 42px;
+height: 21px;
+left: 99px;
+top: 542px;
+
+    
+background: rgba(124, 124, 124, 1);
+border-radius: 40px;
+border-style: none;
+
+}
+
+
+.editable-button{
+
+width: 74px;
+height: 15px;
+
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 15px;
+letter-spacing: -0.02em;
+
+color: #A4A4A4;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 3px 10px;
+gap: 10px;
+
+width: 94px;
+height: 21px;
+left: 64px;
+top: 435px;
+
+background: #EBEBEB;
+border-radius: 40px;
+border-style: none;
+
+}
+
+.button-small{
+width: auto;
+padding: 5px 10px
+
+}
