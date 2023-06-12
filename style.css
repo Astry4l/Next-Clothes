@@ -1,8 +1,9 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap');
 
 .button_filtre {
 
 font-family: 'Prompt', sans-serif;
+font-style: rgba(99, 51, 255, 1);
 letter-spacing: -0.02em;
 display: flex;
 flex-direction: row;
@@ -19,6 +20,9 @@ border-radius: 40px;
 flex: none;
 order: 0;
 flex-grow: 0;
+stroke: none;
+text-decoration: none;
+border-style: none;
+position: center;
 
-}
 }
