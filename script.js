@@ -3,4 +3,4 @@ function clearText() {
     button.innerHTML = "";
   }
 
-  
+

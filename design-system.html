@@ -61,30 +61,49 @@
       </svg></div>
     </button>
 
-    <div class="KM" style="position:relative; margin:auto; width:60%">
-      <span class="km" style="position:absolute; width:fit-content;">
-      <p id="myValue"></p>
-      </span>
-      <input type="range" id="myRange" max="10" min="0" style="width:50%"> 
-    </div>
+    <div class="rangekm">
+      <div class="range-slider">
+        <input type="range" min="0" max="10" value="50" class="slider" id="myRange">
+      </div>
+      <div class="KM" style="position:absolute; margin:auto; width:60%">
+        <span style="position:absolute; width:40px;">
+        <span id="myValue"></span>
+        </span>
+      </div>
+    
+      <script type="text/javascript" charset="utf-8">
+        var myRange = document.querySelector('#myRange');
+        var myValue = document.querySelector('#myValue');
+        var myUnits = 'km';
+        var off = myRange.offsetWidth / (parseInt(myRange.max) - parseInt(myRange.min));
+        var px =  ((myRange.valueAsNumber - parseInt(myRange.min)) * off) - (myValue.offsetParent.offsetWidth / 2);
   
-    <script type="text/javascript" charset="utf-8">
-      var myRange = document.querySelector('#myRange');
-      var myValue = document.querySelector('#myValue');
-      var myUnits = 'km';
-      var off = myRange.offsetWidth / (parseInt(myRange.max) - parseInt(myRange.min));
-      var px =  ((myRange.valueAsNumber - parseInt(myRange.min)) * off) - (myValue.offsetParent.offsetWidth / 2);
-  
-      myValue.parentElement.style.left = px + 'px';
-      myValue.parentElement.style.top = myRange.offsetHeight + 'px';
-      myValue.innerHTML = myRange.value + ' ' + myUnits;
-  
-      myRange.oninput =function(){
-        let px = ((myRange.valueAsNumber - parseInt(myRange.min)) * off) - (myValue.offsetWidth / 2);
-        myValue.innerHTML = myRange.value + ' ' + myUnits;
         myValue.parentElement.style.left = px + 'px';
-      };
-    </script>
+        myValue.parentElement.style.top = myRange.offsetHeight + 'px';
+        myValue.innerHTML = myRange.value + ' ' + myUnits;
+  
+        myRange.oninput =function(){
+          let px = ((myRange.valueAsNumber - parseInt(myRange.min)) * off) - (myValue.offsetWidth / 2);
+          myValue.innerHTML = myRange.value + ' ' + myUnits;
+          myValue.parentElement.style.left = px + 'px';
+        };
+  
+        const range = document.getElementById('myRange');
+        const rangeValue = document.getElementById('rangeValue');
+  
+        range.addEventListener('input', () => {
+          const value = range.value;
+          const min = range.min ? range.min : 0;
+          const max = range.max ? range.max : 100;
+          const progress = (value - min) / (max - min) * 100;
+  
+          range.style.background = `linear-gradient(to right, #cabcfa ${progress}%, #CACACA ${progress}%)`;
+          rangeValue.value = value;
+          rangeValue.style.left = `calc(${progress}% - ${rangeValue.offsetWidth / 2}px)`;
+        });
+      </script>
+    </div>
+
 
      <button id="editable-button" class="editable-button" contenteditable="true" onclick="clearText()">
         ajouter un tag
