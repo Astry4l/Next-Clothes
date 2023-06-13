@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="design-system-style.css">
     <title>Document</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <button class="button filtre">
@@ -28,15 +29,29 @@
         Tout
      </button>
      <button class="tag">
-        Tags
+        Tagoooooos
      </button>
      <button class="tag2">
         Tags
      </button>
 
-     <button id="editable-button" class="editable-button" contenteditable="true" onclick="clearText()">ajouter un tag</button>
+    <div class="like">
+      <input type="checkbox" id="lik1" aria-label="add a like">
+    </div>
 
-     <div class="navbar">
+    <div class="save">
+      <input type="checkbox" id="sav1" aria-label="add a save">
+    </div>
+
+    <button class="coins">
+      <article>24</article>
+    </button>
+
+     <button id="editable-button" class="editable-button" contenteditable="true" onclick="clearText()">
+        ajouter un tag
+      </button>
+
+     <div class="navbar1">
         <div class="bar">
           <a class="icons home" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -93,8 +108,306 @@
             <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.333 2.75H3.667a.917.917 0 0 0-.917.917v3.666M7.333 19.25H3.667a.917.917 0 0 1-.917-.916v-3.667m11.917 4.583h3.666c.507 0 .917-.41.917-.916v-3.667M14.667 2.75h3.666c.507 0 .917.41.917.917v3.666M14.667 11H7.333M11 14.666V7.333"/>
           </svg>
         </div>
+      </div>
+
+      <div class="navbar2">
+        <div class="bar">
+          <a class="icons home" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <g clip-path="url(#a)">
+                <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
+                <path fill="#fff" d="M4.5 9v12h15V9L12 3 4.5 9Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 21V9L2 11l10-8 10 8-2.5-2v12h-15Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-width="2" d="M4.5 21h15"/>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h24v24H0z"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="icons map" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <g clip-path="url(#a)">
+                <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 6 2 3v15l6.5 3 7-3 6.5 3V6l-6.5-3-7 3Zm7-3v15m-7-12v15"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.25 4.5 8.5 6l7-3 3.25 1.5m-13.5 15L8.5 21l7-3 3.25 1.5"/>
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h24v24H0z"/>
+                  </clipPath>
+                </defs>
+            </svg>        
+          </a>
+          
+          <span></span>
   
-    </div>
+          <a class="icons agenda" href="#">
+            <svg class="icons agenda" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <g clip-path="url(#a)">
+                <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 4H3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1ZM2 10h20M2 16h20M8.5 2v4m7-4v4m-7 4v12m7-12v12M22 6.5v13M2 6.5v13M7 22h10"/>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h24v24H0z"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="icons account" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm9 12a9 9 0 1 0-18 0"/>
+            </svg>
+          </a>
+        </div>
+        <div class="circle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 22 22">
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.333 2.75H3.667a.917.917 0 0 0-.917.917v3.666M7.333 19.25H3.667a.917.917 0 0 1-.917-.916v-3.667m11.917 4.583h3.666c.507 0 .917-.41.917-.916v-3.667M14.667 2.75h3.666c.507 0 .917.41.917.917v3.666M14.667 11H7.333M11 14.666V7.333"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="navbar3">
+        <div class="bar">
+          <a class="icons home" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <g clip-path="url(#a)">
+                <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 21V9L2 11l10-8 10 8-2.5-2v12h-15Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-width="2" d="M4.5 21h15"/>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h24v24H0z"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="icons map" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <g clip-path="url(#a)">
+                <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
+                <path fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 6 2 3v15l6.5 3 7-3 6.5 3V6l-6.5-3-7 3Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.5 3v15m-7-12v15M5.25 4.5 8.5 6l7-3 3.25 1.5m-13.5 15L8.5 21l7-3 3.25 1.5"/>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h24v24H0z"/>
+                </clipPath>
+              </defs>
+            </svg>        
+          </a>
+          
+          <span></span>
+  
+          <a class="icons agenda" href="#">
+            <svg class="icons agenda" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <g clip-path="url(#a)">
+                <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 4H3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1ZM2 10h20M2 16h20M8.5 2v4m7-4v4m-7 4v12m7-12v12M22 6.5v13M2 6.5v13M7 22h10"/>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h24v24H0z"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="icons account" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm9 12a9 9 0 1 0-18 0"/>
+            </svg>
+          </a>
+        </div>
+        <div class="circle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 22 22">
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.333 2.75H3.667a.917.917 0 0 0-.917.917v3.666M7.333 19.25H3.667a.917.917 0 0 1-.917-.916v-3.667m11.917 4.583h3.666c.507 0 .917-.41.917-.916v-3.667M14.667 2.75h3.666c.507 0 .917.41.917.917v3.666M14.667 11H7.333M11 14.666V7.333"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="navbar4">
+        <div class="bar">
+          <a class="icons home" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <g clip-path="url(#a)">
+                <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 21V9L2 11l10-8 10 8-2.5-2v12h-15Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-width="2" d="M4.5 21h15"/>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h24v24H0z"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="icons map" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <g clip-path="url(#a)">
+                <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 6 2 3v15l6.5 3 7-3 6.5 3V6l-6.5-3-7 3Zm7-3v15m-7-12v15"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.25 4.5 8.5 6l7-3 3.25 1.5m-13.5 15L8.5 21l7-3 3.25 1.5"/>
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h24v24H0z"/>
+                  </clipPath>
+                </defs>
+            </svg>        
+          </a>
+          
+          <span></span>
+
+          <a class="icons agenda" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <g clip-path="url(#a)">
+                <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
+                <path fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 4H3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 10h20M2 16h20M8.5 2v4m7-4v4m-7 4v12m7-12v12M22 6.5v13M2 6.5v13M7 22h10"/>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h24v24H0z"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="icons account" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm9 12a9 9 0 1 0-18 0"/>
+            </svg>
+          </a>
+        </div>
+        <div class="circle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 22 22">
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.333 2.75H3.667a.917.917 0 0 0-.917.917v3.666M7.333 19.25H3.667a.917.917 0 0 1-.917-.916v-3.667m11.917 4.583h3.666c.507 0 .917-.41.917-.916v-3.667M14.667 2.75h3.666c.507 0 .917.41.917.917v3.666M14.667 11H7.333M11 14.666V7.333"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="navbar5">
+        <div class="bar">
+          <a class="icons home" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <g clip-path="url(#a)">
+                <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 21V9L2 11l10-8 10 8-2.5-2v12h-15Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-width="2" d="M4.5 21h15"/>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h24v24H0z"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="icons map" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <g clip-path="url(#a)">
+                <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 6 2 3v15l6.5 3 7-3 6.5 3V6l-6.5-3-7 3Zm7-3v15m-7-12v15"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.25 4.5 8.5 6l7-3 3.25 1.5m-13.5 15L8.5 21l7-3 3.25 1.5"/>
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h24v24H0z"/>
+                  </clipPath>
+                </defs>
+            </svg>        
+          </a>
+          
+          <span></span>
+  
+          <a class="icons agenda" href="#">
+            <svg class="icons agenda" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <g clip-path="url(#a)">
+                <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 4H3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1ZM2 10h20M2 16h20M8.5 2v4m7-4v4m-7 4v12m7-12v12M22 6.5v13M2 6.5v13M7 22h10"/>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h24v24H0z"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="icons account" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/>
+              <path fill="#fff" d="M21 22a9 9 0 1 0-18 0"/>
+              <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 22a9 9 0 1 0-18 0"/>
+            </svg>
+          </a>
+        </div>
+        <div class="circle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 22 22">
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.333 2.75H3.667a.917.917 0 0 0-.917.917v3.666M7.333 19.25H3.667a.917.917 0 0 1-.917-.916v-3.667m11.917 4.583h3.666c.507 0 .917-.41.917-.916v-3.667M14.667 2.75h3.666c.507 0 .917.41.917.917v3.666M14.667 11H7.333M11 14.666V7.333"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="navbar6">
+        <div class="bar">
+          <a class="icons home" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <g clip-path="url(#a)">
+                <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 21V9L2 11l10-8 10 8-2.5-2v12h-15Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-width="2" d="M4.5 21h15"/>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h24v24H0z"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="icons map" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <g clip-path="url(#a)">
+                <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 6 2 3v15l6.5 3 7-3 6.5 3V6l-6.5-3-7 3Zm7-3v15m-7-12v15"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.25 4.5 8.5 6l7-3 3.25 1.5m-13.5 15L8.5 21l7-3 3.25 1.5"/>
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h24v24H0z"/>
+                  </clipPath>
+                </defs>
+            </svg>        
+          </a>
+          
+          <span></span>
+  
+          <a class="icons agenda" href="#">
+            <svg class="icons agenda" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <g clip-path="url(#a)">
+                <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 4H3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1ZM2 10h20M2 16h20M8.5 2v4m7-4v4m-7 4v12m7-12v12M22 6.5v13M2 6.5v13M7 22h10"/>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h24v24H0z"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="icons account" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm9 12a9 9 0 1 0-18 0"/>
+            </svg>
+          </a>
+        </div>
+        <div class="circle clicked">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 22 22">
+            <path stroke="#6333FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.333 2.75H3.667a.917.917 0 0 0-.917.917v3.666M7.333 19.25H3.667a.917.917 0 0 1-.917-.916v-3.667m11.917 4.583h3.666c.507 0 .917-.41.917-.916v-3.667M14.667 2.75h3.666c.507 0 .917.41.917.917v3.666M14.667 11H7.333M11 14.666V7.333"/>
+          </svg>
+        </div>
+      </div>
 
 </body>
 </html>
