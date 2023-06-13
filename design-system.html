@@ -47,6 +47,31 @@
       <article>24</article>
     </button>
 
+    <div class="KM" style="position:relative; margin:auto; width:60%">
+      <span class="km" style="position:absolute; width:fit-content;">
+      <p id="myValue"></p>
+      </span>
+      <input type="range" id="myRange" max="10" min="0" style="width:50%"> 
+    </div>
+  
+    <script type="text/javascript" charset="utf-8">
+      var myRange = document.querySelector('#myRange');
+      var myValue = document.querySelector('#myValue');
+      var myUnits = 'km';
+      var off = myRange.offsetWidth / (parseInt(myRange.max) - parseInt(myRange.min));
+      var px =  ((myRange.valueAsNumber - parseInt(myRange.min)) * off) - (myValue.offsetParent.offsetWidth / 2);
+  
+      myValue.parentElement.style.left = px + 'px';
+      myValue.parentElement.style.top = myRange.offsetHeight + 'px';
+      myValue.innerHTML = myRange.value + ' ' + myUnits;
+  
+      myRange.oninput =function(){
+        let px = ((myRange.valueAsNumber - parseInt(myRange.min)) * off) - (myValue.offsetWidth / 2);
+        myValue.innerHTML = myRange.value + ' ' + myUnits;
+        myValue.parentElement.style.left = px + 'px';
+      };
+    </script>
+
      <button id="editable-button" class="editable-button" contenteditable="true" onclick="clearText()">
         ajouter un tag
       </button>
