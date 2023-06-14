@@ -350,3 +350,54 @@ background-image: url(https://placekitten.com/200/300);
     width: 21px;
     
 }
+
+/*Range Kilometers*/
+
+.range-slider {
+  position: relative;
+  width: 300px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #cabcfa;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+
+
+/*gérer le curseur*/
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.value {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.KM {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+    color: #6333FF;
+}
