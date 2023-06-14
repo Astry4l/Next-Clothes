@@ -67,18 +67,35 @@
     letter-spacing: -0.02em;
 }
 
-.button_filtre {
-    font-family: 'Prompt', sans-serif;
+.filtret {
     letter-spacing: -0.02em;
-    display: flex;
     height: 27px;
+    width: fit-content;
     border-radius: 40px;
     padding: 3px 10px 3px 10px;
     border-style: none;
+    display: inline-block;
     background-color: var(--clicked-color);
     color: var(--clicked-text-color);
-    width: fit-content;
+    cursor: pointer;
+    transition: background-color 0.3s ease ; 
 }
+.filtre {
+    letter-spacing: -0.02em;
+    height: 27px;
+    width: fit-content;
+    border-radius: 40px;
+    padding: 3px 10px 3px 10px;
+    border-style: none;
+    display: inline-block;
+    background-color: #fff;
+    color: var(--second-text-color);
+    cursor: pointer;
+}
+
+
+
+  
     
 .tag{
     
