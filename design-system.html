@@ -9,10 +9,11 @@
     <script src="script.js"></script>
 </head>
 <body>
+    <!-- BUTTON PRIMARY -->
     <button class="button">
        Tout
     </button>
-    
+    <!-- SEARCH -->
     <button class="button loop">
       <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none" viewBox="0 0 35 35">
         <g clip-path="url(#a)">
@@ -38,14 +39,25 @@
     
      <button class="tag">
         Tagoooooos
-     </button>
-     <button class="tag2">
+    </button>
+    <button class="tag2">
         Tags
-     </button>
-
-    <div class="like">
-      <input type="checkbox" id="lik1" aria-label="add a like">
-    </div>
+    </button>
+    <!-- Card vêtement -->
+    <article class="card">
+    <!-- Image du vêtement -->
+      <div class="img green1"></div>
+    <!-- Valeur du vêtement -->
+      <div class="bottom">
+        <div class="valueclothe text-base text-button">77</div>
+    <!-- Nom du vêtement -->
+        <span class="name text-base text-body">Vêtement</span>
+    <!-- Like -->
+        <div class="like">
+          <input type="checkbox" id="lik1" aria-label="add a like">
+        </div>
+      </div>
+    </article>
 
     <div class="save">
       <input type="checkbox" id="sav1" aria-label="add a save">
@@ -108,6 +120,20 @@
       </script>
     </div>
 
+    <a href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+        <g clip-path="url(#a)">
+          <path fill="#fff" fill-opacity=".01" d="M20 0H0v20h20V0Z"/>
+          <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M1.667 2.5h16.666V15h-6.25L10 17.083 7.917 15h-6.25V2.5Z"/>
+          <path stroke="#000" stroke-linecap="round" stroke-width="1.5" d="M9.584 8.75h.834m3.332 0h.833m-9.166 0h.833"/>
+        </g>
+        <defs>
+          <clipPath id="a">
+            <path fill="#fff" d="M0 0h20v20H0z"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </a>
 
      <button id="editable-button" class="editable-button" contenteditable="true" onclick="clearText()">
         ajouter un tag
