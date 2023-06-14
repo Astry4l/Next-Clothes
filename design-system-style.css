@@ -496,6 +496,8 @@ body {
     filter: drop-shadow(0px 4px 20px #000000);
 }
 
+
+
 .impact{
 display: flex;
 justify-content: center;
@@ -504,7 +506,7 @@ flex-direction: column;
 width: 83px;
 height: 95px;
 border-radius: 10%;
-gap: 5px;
+gap: 6px;
 }
 
 .economie{
@@ -516,7 +518,19 @@ gap: 16px;
 
 }
 
+.impact2{
+display: flex;
+align-items: center;
+flex-direction: row;
+width: 132px;
+height: 95px;
+border-radius: 10%;
+gap: 6px;
+}
+
 .result{
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
 }
