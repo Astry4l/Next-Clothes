@@ -594,3 +594,8 @@ gap: 6px;
     align-items: flex-start;
     gap: 24px;
 }
+
+.iconw{
+    border-style: none;
+    background: none;
+}
