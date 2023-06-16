@@ -17,6 +17,23 @@
     color: var(--clicked-text-color);
 }
 
+/* STYLE BUTTON SECONDARY */
+
+.button2 {
+    display: flex;
+    border-radius: 40px;
+    padding: 3px 10px 3px 10px;
+    border-style: none;
+    background-color: var(--main-text-color);
+    color: var(--clicked-text-color);
+    width: fit-content;
+}
+
+.button2:active {
+    background-color: var(--clicked-color);
+    color: var(--clicked-text-color);
+}
+
 /* STYLE COLOR & TEXT */
 
 :root {
@@ -38,6 +55,12 @@
     font-weight: 300;
     font-size: 10px;
     line-height: 15px;
+}
+
+.text-impact {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18.14px;
 }
 
 .text-body {
@@ -514,8 +537,6 @@ display: flex;
 flex-direction: row;
 align-items: flex-start;
 gap: 16px;
-    
-
 }
 
 .impact2{
