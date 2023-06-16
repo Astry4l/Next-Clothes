@@ -34,6 +34,29 @@
     color: var(--clicked-text-color);
 }
 
+/* STYLE BUTTON point */
+
+.buttonp {
+    display: flex;
+    border-radius: 40px;
+    border-style: none;
+    padding: 3px 10px 3px 10px;
+    background-color: var(--clicked-color);
+    color: var(--main-color);
+    width: fit-content;
+}
+
+/* STYLE BUTTON nombre de porteurs */
+
+.buttonv {
+    display: flex;
+    border-radius: 40px;
+    border-style: none;
+    padding: 6px 6px 6px 6px;
+    background-color: var(--clicked-color);
+    color: var(--main-color);
+}
+
 /* STYLE COLOR & TEXT */
 
 :root {
