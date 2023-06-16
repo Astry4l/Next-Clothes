@@ -233,16 +233,7 @@
 
 .editable-button{
     
-    
-    
-    font-family: 'Prompt';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 10px;
-    line-height: 15px;
-    letter-spacing: -0.02em;
-    
-    color: #A4A4A4;
+    color: var(--tag-color);
     
     flex: none;
     order: 0;
@@ -259,7 +250,7 @@
     left: 64px;
     top: 435px;
     
-    background: #EBEBEB;
+    background: var(--add-tag-color);
     border-radius: 40px;
     border-style: none;
     
@@ -718,4 +709,54 @@ height: 75px;
 border-radius: 10px;
     gap: 6px; 
 }
+
+/* MESSAGERIE */
+
+.editable-button2{
+    
+    color:var(--tag-color);
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 10px;
+    gap: 10px;
+    
+    position: relative;
+    width: 200px;
+    height: 44px;
+    left: 40px;
+    top: 44px;
+    
+    background: var(--add-tag-color);
+    border-radius: 5px;
+    border-style: none;
+    
+}
+
+.scan {
+    width: 173px;
+    height: 174px;
+}
+
+/* MENU PROFIL */
+
+.menufil {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    height: 25px;
+}
+
 

@@ -161,7 +161,7 @@
       </svg>
     </a>
 
-     <button id="editable-button" class="editable-button" contenteditable="true" onclick="clearText()">
+     <button id="editable-button" class="editable-button text-base text-tag" contenteditable="true" onclick="clearText()">
         ajouter un tag
       </button>
 
@@ -636,16 +636,72 @@
 
           <button class="buttonv"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M7.12467 7.12533L14.2497 3.16699H23.7497L30.8747 7.12533L34.0413 19.0003L27.708 23.7503V34.8337H10.2913V23.7503L3.95801 19.0003L7.12467 7.12533Z" stroke="#6333FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M15.52 20.934L17.314 19.283L18.172 18.516C18.6487 18.1 19.0083 17.7663 19.251 17.515C19.5023 17.2637 19.706 16.995 19.862 16.709C20.018 16.4143 20.096 16.098 20.096 15.76C20.096 15.266 19.9487 14.889 19.654 14.629C19.368 14.3603 18.9563 14.226 18.419 14.226C18.003 14.226 17.5697 14.304 17.119 14.46C16.677 14.6073 16.274 14.8197 15.91 15.097V13.524C16.664 12.9867 17.5913 12.718 18.692 12.718C19.6627 12.718 20.4167 12.978 20.954 13.498C21.4913 14.018 21.76 14.7287 21.76 15.63C21.76 16.0547 21.6777 16.4533 21.513 16.826C21.3483 17.19 21.1143 17.5453 20.811 17.892C20.5077 18.2387 20.096 18.6503 19.576 19.127L17.951 20.635H22.085V22H15.52V20.934Z" fill="#6333FF"/>
+              <path d="M15.52 20.934L17.314 19.283L18.172 18.516C18.6487 18.1 19.0083 17.7663 19.251 17.515C19.5023 17.2637 19.706 16.995 19.862 16.709C20.018 16.4143 20.096 16.098 20.096 15.76C20.096 15.266 19.9487 14.889 19.654 14.629C19.368 14.3603 18.9563 14.226 18.419 14.226C18.003 14.226 17.5697 14.304 17.119 14.46C16.677 14.6073 16.274 14.8197 15.91 15.097V13.524C16.664 12.9867 17.5913 12.718 18.692 12.718C19.6627 12.718 20.4167 12.978 20.954 13.498C21.4913 14.018 21.76 14.7287 21.76 15.63C21.76 16.0547 21.6777 16.4533 21.513 16.826C21.3483 17.19 21.1143 17.5453 20.811 17.892C20.5077 18.2387 20.096 18.6503 19.576 19.127L17.951 20.635H22.085V22H15.52V20.934Z" fill="#6333FF"/>
             </svg>
-            </button>
+          </button>
 
             <img  src="img/message1.png" width="148" height="85" alt="Quand voulez vous réserver?"/>
             <img  src="img/message2.png" width="148" height="100" alt="Les dates de réservations"/>
-            <img src="img/messagebarre.png" width="278" height="44" alt="Entrer du texte"/>
+            <div>
+              <button id="editable-button2" class="editable-button2 text-base text-body" contenteditable="true" onclick="clearText()">
+                Message
+              </button>
+              <img src="img/messagerie.png" width="278" height="44" alt="Entrer du texte"/>
+            </div>
             <img src="img/map.png" width="280" height="313" alt="Entrer du texte"/>
             <img src="img/localisation.png" width="48" height="75" alt="Entrer du texte"/>
-            
+
+          <img class="scan" src="img/Scan.gif" alt="">
+          <div class="menufil">
+            <span class="data text-base text-button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_473_5962)">
+                  <path d="M24 0H0V24H24V0Z" fill="white" fill-opacity="0.01"/>
+                  <path d="M9.1419 21.5854C7.46635 21.0866 5.9749 20.1604 4.79393 18.9333C5.2345 18.4111 5.5 17.7365 5.5 16.9998C5.5 15.343 4.15685 13.9998 2.5 13.9998C2.39977 13.9998 2.3007 14.0047 2.203 14.0143C2.0699 13.3636 2 12.6899 2 11.9998C2 10.9545 2.16039 9.94667 2.4579 8.99952C2.47191 8.99972 2.48594 8.99982 2.5 8.99982C4.15685 8.99982 5.5 7.65667 5.5 5.99982C5.5 5.52417 5.3893 5.07437 5.1923 4.67481C6.34875 3.5995 7.76025 2.79477 9.32605 2.36133C9.8222 3.33385 10.8333 3.99982 12 3.99982C13.1667 3.99982 14.1778 3.33385 14.674 2.36133C16.2398 2.79477 17.6512 3.5995 18.8077 4.67481C18.6107 5.07437 18.5 5.52417 18.5 5.99982C18.5 7.65667 19.8432 8.99982 21.5 8.99982C21.5141 8.99982 21.5281 8.99972 21.5421 8.99952C21.8396 9.94667 22 10.9545 22 11.9998C22 12.6899 21.9301 13.3636 21.797 14.0143C21.6993 14.0047 21.6002 13.9998 21.5 13.9998C19.8432 13.9998 18.5 15.343 18.5 16.9998C18.5 17.7365 18.7655 18.4111 19.2061 18.9333C18.0251 20.1604 16.5336 21.0866 14.8581 21.5854C14.4714 20.3757 13.338 19.4998 12 19.4998C10.662 19.4998 9.5286 20.3757 9.1419 21.5854Z" stroke="#333333" stroke-width="1.5" stroke-linejoin="round"/>
+                  <path d="M12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5Z" stroke="#333333" stroke-width="1.5" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_473_5962">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>Paramètres</p>
+            </span>
+            <span class="data text-base text-button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_473_5965)">
+                  <path d="M24 0H0V24H24V0Z" fill="white" fill-opacity="0.01"/>
+                  <path d="M12 22C14.7614 22 17.2614 20.8807 19.0711 19.0711C20.8807 17.2614 22 14.7614 22 12C22 9.2386 20.8807 6.7386 19.0711 4.92893C17.2614 3.11929 14.7614 2 12 2C9.2386 2 6.7386 3.11929 4.92893 4.92893C3.11929 6.7386 2 9.2386 2 12C2 14.7614 3.11929 17.2614 4.92893 19.0711C6.7386 20.8807 9.2386 22 12 22Z" stroke="#333333" stroke-width="1.5" stroke-linejoin="round"/>
+                  <path d="M12 14.3125V12.3125C13.6568 12.3125 15 10.9694 15 9.3125C15 7.65565 13.6568 6.3125 12 6.3125C10.3432 6.3125 9 7.65565 9 9.3125" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18.8125C12.6904 18.8125 13.25 18.2529 13.25 17.5625C13.25 16.8722 12.6904 16.3125 12 16.3125C11.3097 16.3125 10.75 16.8722 10.75 17.5625C10.75 18.2529 11.3097 18.8125 12 18.8125Z" fill="#333333"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_473_5965">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg> 
+              <p>Centre d'aide</p>
+            </span>
+            <span class="data text-base text-button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_473_5968)">
+                  <path d="M23.7553 0H0.245117V23.5102H23.7553V0Z" fill="white" fill-opacity="0.01"/>
+                  <path d="M23.7553 0.490234H0.245117V24.0004H23.7553V0.490234Z" fill="white" fill-opacity="0.01"/>
+                  <path d="M3.18359 4.53318L12.0041 1.95898L20.8162 4.53318V9.81223C20.8162 15.3609 17.2653 20.2869 12.0012 22.0409C6.73564 20.2869 3.18359 15.3598 3.18359 9.80978V4.53318Z" stroke="#333333" stroke-width="1.5" stroke-linejoin="round"/>
+                  <path d="M7.5918 11.2654L11.0204 14.694L16.8979 8.81641" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_473_5968">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>Mentions légales</p>
+            </span>
+          </div>
+
 
 
 

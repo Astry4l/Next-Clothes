@@ -3,6 +3,11 @@ function clearText() {
     button.innerHTML = "";
   }
 
+  function clearText() {
+    var button = document.getElementById("editable-button2");
+    button.innerHTML = "";
+  }
+
 const checkbox = document.getElementById('lik1');
 const button = document.getElementById('réservation');
 
