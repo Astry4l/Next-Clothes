@@ -85,7 +85,7 @@
 }
 
 .text-impact {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
     line-height: 18.14px;
 }
@@ -227,8 +227,7 @@
 
 .editable-button{
     
-    width: 74px;
-    height: 15px;
+    
     
     font-family: 'Prompt';
     font-style: normal;
@@ -249,7 +248,7 @@
     padding: 3px 10px;
     gap: 10px;
     
-    width: 94px;
+    width: fit-content;
     height: 21px;
     left: 64px;
     top: 435px;
@@ -583,6 +582,17 @@ gap: 6px;
     flex-direction: row;
     align-items: flex-start;
     gap: 16px;
+}
+
+.impact3{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+width: 279px;
+height: 75px;
+border: 1px solid #6333FF;
+border-radius: 10px;
+    gap: 6px; 
 }
 
 .disponibility {
