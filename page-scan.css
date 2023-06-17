@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap');
+
+
+/* STYLE BUTTON PRIMARY */
+
+.button {
+    display: flex;
+    border-radius: 40px;
+    padding: 3px 10px 3px 10px;
+    border-style: none;
+    background-color: var(--main-color);
+    color: var(--main-text-color);
+    width: fit-content;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.button:active {
+    background-color: var(--clicked-color);
+    color: var(--clicked-text-color);
+}
+
+/* STYLE COLOR & TEXT */
+
+:root {
+    --main-color: #6333FF;
+    --clicked-color: #DCD3FB;
+    --main-text-color: #FFFFFF;
+    --clicked-text-color: #6333FF;
+    --second-text-color: #000000;
+    --coin-color: #392284;
+    --tag-color: #A4A4A4;
+    --add-tag-color: #EBEBEB;
+}
+
+/* CROSS ICON */
+.iconc{
+    position: absolute;
+}
+
+/* SEARCH */
+
+.loop{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    align-items: center;
+    border-radius: 50%;
+}
