@@ -5,9 +5,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style-home-green.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <span class="heade">
+    
+
+    <img class="banner" src="img/banner.png" alt="Découvre notre sélections d articles vert">
+
+    <span class="filtregenre text-button">
+        <button class="filtret"> Tout</button>
+       <button class="filtre">Femme</button>
+       <button class="filtre">Homme</button>
+       <button class="filtre">Enfants</button>
+    </span>
+
+    <span class="TAGbar">
+        <button class="text-base text-tag tag">
+            Vert
+        </button>
+        <button id="editable-button" class="editable-button text-base text-tag" contenteditable="true" onclick="clearText()">
+            ajouter_un_tag
+        </button>
+        <div class="save">
+          <input type="checkbox" id="sav1" aria-label="add a save">
+        </div>
+    </span>
+
+    <div class="rangekm">
+        <div class="text-base text-impact KM" style="position:absolute; margin:auto; width:60%">
+          <span style="position:absolute; width:40px;">
+          <span id="myValue"></span>
+          </span>
+        </div>
+        <div class="range-slider">
+          <input type="range" min="0" max="10" value="10" class="slider" id="myRange">
+        </div>
+        
+        <script type="text/javascript" charset="utf-8">
+          var myRange = document.querySelector('#myRange');
+          var myValue = document.querySelector('#myValue');
+          var myUnits = 'km';
+          var off = myRange.offsetWidth / (parseInt(myRange.max) - parseInt(myRange.min));
+          var px =  ((myRange.valueAsNumber - parseInt(myRange.min)) * off) - (myValue.offsetParent.offsetWidth / 2);
+    
+          myValue.parentElement.style.left = px + 'px';
+          myValue.parentElement.style.top = myRange.offsetHeight + 'px';
+          myValue.innerHTML = myRange.value + ' ' + myUnits;
+    
+          myRange.oninput =function(){
+            let px = ((myRange.valueAsNumber - parseInt(myRange.min)) * off) - (myValue.offsetWidth / 2);
+            myValue.innerHTML = myRange.value + ' ' + myUnits;
+            myValue.parentElement.style.left = px + 'px';
+          };
+    
+          const range = document.getElementById('myRange');
+          const rangeValue = document.getElementById('rangeValue');
+    
+          range.addEventListener('input', () => {
+            const value = range.value;
+            const min = range.min ? range.min : 0;
+            const max = range.max ? range.max : 100;
+            const progress = (value - min) / (max - min) * 100;
+    
+            range.style.background = `linear-gradient(to right, #cabcfa ${progress}%, #CACACA ${progress}%)`;
+            rangeValue.value = value;
+            rangeValue.style.left = `calc(${progress}% - ${rangeValue.offsetWidth / 2}px)`;
+          });
+        </script>
+    </div>
+    <span class="text-base text-impact indic">
+        <p>0 km</p>
+        <p>10 km</p>
+    </span>
+
+    <section class="gridcard">
+        <h2 class="text-base text-button2 results">Résultats</h2>
+        <!-- Card vêtement -->
+        <article class="card c1">
+        <!-- Image du vêtement -->
+          <div class="img green1"></div>
+        <!-- Valeur du vêtement -->
+          <div class="bottom">
+            <div class="valueclothe text-base text-button">77</div>
+        <!-- Nom du vêtement -->
+            <span class="name text-base text-body">Vêtement</span>
+        <!-- Like -->
+            <div class="like">
+              <input type="checkbox" id="lik1" aria-label="add a like">
+            </div>
+          </div>
+        </article>
+        <article class="card c2">
+            <!-- Image du vêtement -->
+              <div class="img green2"></div>
+            <!-- Valeur du vêtement -->
+              <div class="bottom">
+                <div class="valueclothe text-base text-button">77</div>
+            <!-- Nom du vêtement -->
+                <span class="name text-base text-body">Vêtement</span>
+            <!-- Like -->
+                <div class="like">
+                  <input type="checkbox" id="lik1" aria-label="add a like">
+                </div>
+              </div>
+        </article>
+        <article class="card c3">
+            <!-- Image du vêtement -->
+            <div class="img green3"></div>
+            <!-- Valeur du vêtement -->
+            <div class="bottom">
+                <div class="valueclothe text-base text-button">77</div>
+            <!-- Nom du vêtement -->
+                <span class="name text-base text-body">Vêtement</span>
+            <!-- Like -->
+                <div class="like">
+                  <input type="checkbox" id="lik1" aria-label="add a like">
+                </div>
+            </div>
+        </article>
+        <article class="card c4">
+            <!-- Image du vêtement -->
+            <div class="img green4"></div>
+            <!-- Valeur du vêtement -->
+            <div class="bottom">
+                <div class="valueclothe text-base text-button">77</div>
+            <!-- Nom du vêtement -->
+                <span class="name text-base text-body">Vêtement</span>
+            <!-- Like -->
+                <div class="like">
+                  <input type="checkbox" id="lik1" aria-label="add a like">
+                </div>
+            </div>
+        </article>
+        <article class="card c5">
+            <!-- Image du vêtement -->
+            <div class="img green5"></div>
+            <!-- Valeur du vêtement -->
+            <div class="bottom">
+                <div class="valueclothe text-base text-button">77</div>
+            <!-- Nom du vêtement -->
+                <span class="name text-base text-body">Vêtement</span>
+            <!-- Like -->
+                <div class="like">
+                  <input type="checkbox" id="lik1" aria-label="add a like">
+                </div>
+            </div>
+        </article>
+        <article class="card c6">
+            <!-- Image du vêtement -->
+            <div class="img green6"></div>
+            <!-- Valeur du vêtement -->
+            <div class="bottom">
+                <div class="valueclothe text-base text-button">77</div>
+            <!-- Nom du vêtement -->
+                <span class="name text-base text-body">Vêtement</span>
+            <!-- Like -->
+                <div class="like">
+                  <input type="checkbox" id="lik1" aria-label="add a like">
+                </div>
+            </div>
+        </article>
+        <article class="card c7">
+            <!-- Image du vêtement -->
+            <div class="img green7"></div>
+            <!-- Valeur du vêtement -->
+            <div class="bottom">
+                <div class="valueclothe text-base text-button">77</div>
+            <!-- Nom du vêtement -->
+                <span class="name text-base text-body">Vêtement</span>
+            <!-- Like -->
+                <div class="like">
+                  <input type="checkbox" id="lik1" aria-label="add a like">
+                </div>
+            </div>
+        </article>
+        <article class="card c8">
+            <!-- Image du vêtement -->
+            <div class="img green8"></div>
+            <!-- Valeur du vêtement -->
+            <div class="bottom">
+                <div class="valueclothe text-base text-button">77</div>
+            <!-- Nom du vêtement -->
+                <span class="name text-base text-body">Vêtement</span>
+            <!-- Like -->
+                <div class="like">
+                  <input type="checkbox" id="lik1" aria-label="add a like">
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <div class="heade">
         <button class="coins text-button">
             <article>24</article> <div class="point"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24">
               <g clip-path="url(#a)">
@@ -53,12 +241,7 @@
           </svg>
         </a>
         
-    </span>
-
-    <img class="banner" src="img/banner.png" alt="Découvre notre sélections d articles vert">
-
-
-
+    </div>
 
     <div class="navbar2">
         <div class="bar">

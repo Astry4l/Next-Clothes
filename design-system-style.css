@@ -71,6 +71,7 @@
     --second-text-color: #000000;
     --coin-color: #392284;
     --tag-color: #A4A4A4;
+    --tag2-color: #7C7C7C;
     --add-tag-color: #EBEBEB;
 }
 
@@ -82,6 +83,7 @@
     font-weight: 300;
     font-size: 10px;
     line-height: 15px;
+    color: var(--main-text-color);
 }
 
 .text-impact {
@@ -156,24 +158,8 @@
 
   
     
-.tag{
-    
-    width: 22px;
-    height: 15px;
-        
-    font-family: 'Prompt';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 10px;
-    line-height: 15px;
-    letter-spacing: -0.02em;
-        
-    color: #FFFFFF;
-        
+.tag{        
     flex: none;
-    order: 0;
-    flex-grow: 0;
-    
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -186,30 +172,12 @@
     top: 542px;
     
         
-    background: #A4A4A4;
+    background: var(--tag-color);
     border-radius: 40px;
-    border-style: none;
-    
+    border-style: none; 
 }
 
 .tag2{
-    
-    width: 22px;
-    height: 15px;
-        
-    font-family: 'Prompt';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 10px;
-    line-height: 15px;
-    letter-spacing: -0.02em;
-        
-    color: #FFFFFF;
-        
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -222,11 +190,10 @@
     top: 542px;
     
         
-    background: rgba(124, 124, 124, 1);
+    background:var(--tag2-color);
     border-radius: 40px;
     border-style: none;
-    
-    }
+}
     
 
 /* AJOUT DE TAG */
@@ -718,9 +685,6 @@ border-radius: 10px;
     
     color:var(--tag-color);
     
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     
     display: flex;
     flex-direction: row;
