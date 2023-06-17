@@ -760,3 +760,52 @@ border-radius: 10px;
 }
 
 
+  
+.localisation {
+    display: inline-block;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    border: none;
+    cursor: pointer;
+
+  }
+
+  .rondimg {
+    position: absolute;
+    left: 6%;
+    top: 6%;
+  }
+  
+  .rond {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: inherit;
+    top: 75%;
+    left: 25%;
+
+  }
+  
+  .rond2{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color:inherit;
+    top: calc(75% + 35px);
+    left: 50%;
+    margin-top: -6px; 
+    margin-left: -6px;
+  }
+
+  .localisation:active{
+    background-color: var(--clicked-color);
+  }
+  
+  
+  
+  
