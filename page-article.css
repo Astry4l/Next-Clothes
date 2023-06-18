@@ -136,3 +136,154 @@
 .clicked {
     background: var(--clicked-color);
 }
+
+/* CALENDRIER */
+
+.résa {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.calendar{
+    height: 223px;
+    width: 280px;
+    filter: drop-shadow(0px 2px 5px #cfcfcf);
+}
+
+.d1 {
+    position: relative;
+    top: -137px;
+    left: 160px;
+}
+
+.d1 input {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='23' viewBox='0 0 20 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='12' r='10' fill='white'/%3E%3Cpath d='M5.94 8.165L3.675 9.8V8.345L6.15 6.515H7.47V17H5.94V8.165ZM11.9442 17.225C11.3942 17.225 10.9042 17.165 10.4742 17.045V15.77C10.8642 15.92 11.3142 15.995 11.8242 15.995C13.9742 15.995 15.1542 14.71 15.3642 12.14C15.0642 12.52 14.6692 12.805 14.1792 12.995C13.6992 13.185 13.1592 13.28 12.5592 13.28C11.8892 13.28 11.2942 13.14 10.7742 12.86C10.2542 12.58 9.84922 12.18 9.55922 11.66C9.26922 11.14 9.12422 10.535 9.12422 9.845C9.12422 9.165 9.27422 8.555 9.57422 8.015C9.88422 7.475 10.3292 7.055 10.9092 6.755C11.4892 6.445 12.1742 6.29 12.9642 6.29C13.7242 6.29 14.3992 6.46 14.9892 6.8C15.5892 7.14 16.0592 7.65 16.3992 8.33C16.7392 9 16.9092 9.815 16.9092 10.775C16.9092 12.855 16.4792 14.45 15.6192 15.56C14.7692 16.67 13.5442 17.225 11.9442 17.225ZM12.9642 12.08C13.6242 12.08 14.1742 11.87 14.6142 11.45C15.0642 11.03 15.2892 10.475 15.2892 9.785C15.2892 9.375 15.1892 8.995 14.9892 8.645C14.7992 8.295 14.5292 8.015 14.1792 7.805C13.8292 7.595 13.4242 7.49 12.9642 7.49C12.2642 7.49 11.6992 7.7 11.2692 8.12C10.8492 8.54 10.6392 9.1 10.6392 9.8C10.6392 10.5 10.8492 11.055 11.2692 11.465C11.6992 11.875 12.2642 12.08 12.9642 12.08Z' fill='%231B1B1B'/%3E%3C/svg%3E ");    width: 23px;
+    height: 23px;
+    width: 23px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.d1 input:checked {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='23' viewBox='0 0 20 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='12' r='10' fill='%236333FF'/%3E%3Cpath d='M5.94 8.165L3.675 9.8V8.345L6.15 6.515H7.47V17H5.94V8.165ZM11.9442 17.225C11.3942 17.225 10.9042 17.165 10.4742 17.045V15.77C10.8642 15.92 11.3142 15.995 11.8242 15.995C13.9742 15.995 15.1542 14.71 15.3642 12.14C15.0642 12.52 14.6692 12.805 14.1792 12.995C13.6992 13.185 13.1592 13.28 12.5592 13.28C11.8892 13.28 11.2942 13.14 10.7742 12.86C10.2542 12.58 9.84922 12.18 9.55922 11.66C9.26922 11.14 9.12422 10.535 9.12422 9.845C9.12422 9.165 9.27422 8.555 9.57422 8.015C9.88422 7.475 10.3292 7.055 10.9092 6.755C11.4892 6.445 12.1742 6.29 12.9642 6.29C13.7242 6.29 14.3992 6.46 14.9892 6.8C15.5892 7.14 16.0592 7.65 16.3992 8.33C16.7392 9 16.9092 9.815 16.9092 10.775C16.9092 12.855 16.4792 14.45 15.6192 15.56C14.7692 16.67 13.5442 17.225 11.9442 17.225ZM12.9642 12.08C13.6242 12.08 14.1742 11.87 14.6142 11.45C15.0642 11.03 15.2892 10.475 15.2892 9.785C15.2892 9.375 15.1892 8.995 14.9892 8.645C14.7992 8.295 14.5292 8.015 14.1792 7.805C13.8292 7.595 13.4242 7.49 12.9642 7.49C12.2642 7.49 11.6992 7.7 11.2692 8.12C10.8492 8.54 10.6392 9.1 10.6392 9.8C10.6392 10.5 10.8492 11.055 11.2692 11.465C11.6992 11.875 12.2642 12.08 12.9642 12.08Z' fill='white'/%3E%3C/svg%3E "); 
+}
+
+.d2 {
+    position: relative;
+    top: -171px;
+    left: 236px;
+}
+
+.d2 input {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='23' viewBox='0 0 20 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='12' r='10' fill='white'/%3E%3Cpath d='M2.675 15.995L4.94 13.82C5.14 13.62 5.42 13.36 5.78 13.04C6.35 12.52 6.785 12.1 7.085 11.78C7.385 11.46 7.63 11.12 7.82 10.76C8.01 10.39 8.105 9.995 8.105 9.575C8.105 8.955 7.925 8.485 7.565 8.165C7.205 7.835 6.68 7.67 5.99 7.67C5.52 7.67 5.035 7.755 4.535 7.925C4.045 8.095 3.585 8.345 3.155 8.675V7.205C3.995 6.595 5.02 6.29 6.23 6.29C7.31 6.29 8.15 6.58 8.75 7.16C9.35 7.73 9.65 8.51 9.65 9.5C9.65 9.98 9.545 10.44 9.335 10.88C9.135 11.32 8.85 11.755 8.48 12.185C8.11 12.605 7.61 13.12 6.98 13.73L4.94 15.725H10.04V17H2.675V15.995ZM13.6558 8.165L11.3908 9.8V8.345L13.8658 6.515H15.1858V17H13.6558V8.165Z' fill='%231B1B1B'/%3E%3C/svg%3E%0A");    width: 90px;
+    height: 23px;
+    width: 23px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.d2 input:checked {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='23' viewBox='0 0 20 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='12' r='10' fill='%236333FF'/%3E%3Cpath d='M2.675 15.995L4.94 13.82C5.14 13.62 5.42 13.36 5.78 13.04C6.35 12.52 6.785 12.1 7.085 11.78C7.385 11.46 7.63 11.12 7.82 10.76C8.01 10.39 8.105 9.995 8.105 9.575C8.105 8.955 7.925 8.485 7.565 8.165C7.205 7.835 6.68 7.67 5.99 7.67C5.52 7.67 5.035 7.755 4.535 7.925C4.045 8.095 3.585 8.345 3.155 8.675V7.205C3.995 6.595 5.02 6.29 6.23 6.29C7.31 6.29 8.15 6.58 8.75 7.16C9.35 7.73 9.65 8.51 9.65 9.5C9.65 9.98 9.545 10.44 9.335 10.88C9.135 11.32 8.85 11.755 8.48 12.185C8.11 12.605 7.61 13.12 6.98 13.73L4.94 15.725H10.04V17H2.675V15.995ZM13.6558 8.165L11.3908 9.8V8.345L13.8658 6.515H15.1858V17H13.6558V8.165Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+.buttonR {
+    display: flex;
+    border-radius: 40px;
+    padding: 1px 7px 1px 7px;
+    border-style: none;
+    background-color: var(--main-color);
+    color: var(--main-text-color);
+    width: fit-content;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.buttonR:active {
+    background-color: var(--clicked-color);
+    color: var(--clicked-text-color);
+}
+
+.rés {
+    position: relative;
+    right: 60px;
+    bottom: 5px;
+}
+
+.frectangle {
+    width: 75px;
+    height: 20px;
+    background-color: var(--clicked-color);
+    position: relative;
+    bottom: 112px;
+    left: 176px;
+}
+
+.frectangle p {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+.disponibility {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 40px;
+    margin-right: 1200px;
+}
+
+.state {
+    top: -17px;
+    left: 50%;
+    margin-left: -22px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--tag-color);
+    
+}
+
+.dispo {
+    color: var(--second-text-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.iconw{
+    border-style: none;
+    background: none;
+}
+
+/* CARD CLOTHES */
+.card {
+    width: 134px;
+    height: 205px;
+    top: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* IMAGES CLOTHES */
+.img {
+    position: absolute;
+    width: 278px;
+    height: 388px;
+    left: 21px;
+    top: 143px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
+
+.orange4 {
+    background-image: url(img/orange\ 4.png);
+}
