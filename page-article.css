@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap'); 
+
+/* STYLE COLOR & TEXT */
+
+:root {
+    --main-color: #6333FF;
+    --clicked-color: #DCD3FB;
+    --main-text-color: #FFFFFF;
+    --clicked-text-color: #6333FF;
+    --second-text-color: #000000;
+    --coin-color: #392284;
+    --tag-color: #A4A4A4;
+    --add-tag-color: #EBEBEB;
+}
+
+.text-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: -0.02em;
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    left: calc(50% - 202px/2 + 11px);
+    top: 80px;
+    }
+
+.buttonp {
+    display: flex;
+    border-radius: 40px;
+    border-style: none;
+    padding: 3px 10px 3px 10px;
+    background-color: var(--coin-color);
+    color: var(--main-text-color);
+    width: fit-content;
+    
+}
