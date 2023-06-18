@@ -265,13 +265,15 @@
 }
 
 /* CARD CLOTHES */
-.card {
-    width: 134px;
-    height: 205px;
-    top: 50px;
+/*.card {
+    width: 278px;
+    height: 388px;
+    left: 21px;
+    top: 143px;
     background-color: #fff;
     border-radius: 10px;
 }
+*/
 
 /* IMAGES CLOTHES */
 .img {
