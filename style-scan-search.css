@@ -118,14 +118,14 @@
 
 .heade {
     width: 320px;
-    height: 70px;
+    height: 83px;
     position: fixed;
     top: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 13px;
-    padding: 15px 24px 0px 20px;
+    margin: 0px 19px 0px 12px;
     background-color: #fff;
 }
 
@@ -143,7 +143,7 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    margin-right: 130px;
+    margin-right: 147px;
 }
 
 /* valeur coins */
@@ -167,6 +167,31 @@
     align-items: center;
 }
 
+/* SCAN DU VÊTEMENT EN COURS */
+
+.title {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 67px 19px -130px 24px;
+    gap: 40px;
+}
+
+.title svg {
+    display: flex;
+}
+
+.scanned {
+    width: 173px;
+    height: 174px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 150px 72px -100px 65px;
+
+}
+
 /* BARRE DE FILTRE DE TAG */
 
 .TAGbar {
@@ -176,7 +201,8 @@
     flex-direction: row;
     position: relative;
     top: 129px;
-    margin: 0px 24px 0px 0px;
+    gap: 5px;
+    margin: 0px 19px 0px 12px;
 }
 
 .tag{        
@@ -200,6 +226,7 @@
     background: var(--add-tag-color);
     border-radius: 40px;
     border-style: none;
+    margin-right: 55px;
 
 }
 
@@ -230,25 +257,26 @@
 .rangekm {
     position: relative;
     top: 170px;
-    margin: 0px 24px 0px 20px;
+    margin: 0px 19px 0px 12px;
+    right: 2px;
 }
 
 .indic {
     position: relative;
-    width: 265px;
+    width: 286px;
     height: 24px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0px 24px 0px 20px;
-    gap: 197px;
+    margin: 0px 19px 0px 12px;
+    gap: 210px;
     top: 160px;
     
 }
 
 .range-slider {
     position: relative;
-    width: 265px;
+    width: 281px;
   }
   
   .slider {
@@ -287,7 +315,7 @@
   
   .KM {
     top: -30px;
-      color: #6333FF;
+    color: #6333FF;
   }
 
 /* RÉSULTATS VERT RECHERCHE */
@@ -295,7 +323,7 @@
 .results {
     color: var(--tag-color);
     letter-spacing: 0.06rem;
-    margin: 0px 24px 0px 7px;
+    margin: 0px 19px 0px 12px;
     top: 190px;
     position: relative;
 }
@@ -303,7 +331,7 @@
 .gridcard {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0px 24px 290px 12px;
+    margin: 0px 19px 290px 12px;
     gap: 13px;
     grid-row-gap: 30px;
 
