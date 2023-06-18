@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap');
-
-
 /* STYLE BUTTON PRIMARY */
 
 .button {
@@ -36,6 +33,8 @@
 /* CROSS ICON */
 .iconc{
     position: absolute;
+    left: 28px;
+    top: 36px;
 }
 
 /* SEARCH */
@@ -47,5 +46,35 @@
     border-radius: 50px;
     align-items: center;
     border-radius: 50%;
+    left: 136px;
+    top: 507px;
 }
 
+.iconw{
+    border-style: none;
+    background: none;
+}
+
+.flash{
+    position: absolute;
+    left: 148px;
+    top: 36px;
+}
+
+.photo{
+    position: absolute;
+    left: 247px;
+    top: 516px;
+}
+
+.scandiv{
+    position: absolute;
+    left: 20px;
+    top: 75px;
+}
+
+.miniature{
+    position: absolute;
+    left: 40px;
+    top: 516px;
+}

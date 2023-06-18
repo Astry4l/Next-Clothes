@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap'); 
+
+/* STYLE COLOR & TEXT */
+
+:root {
+    --main-color: #6333FF;
+    --clicked-color: #DCD3FB;
+    --main-text-color: #FFFFFF;
+    --clicked-text-color: #6333FF;
+    --second-text-color: #000000;
+    --coin-color: #392284;
+    --tag-color: #A4A4A4;
+    --add-tag-color: #EBEBEB;
+}
+
+.text-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: -0.02em;
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    left: calc(50% - 202px/2 + 11px);
+    top: 80px;
+    }
+
+
+/* HEADER WITH POINTS & ICONS */
+
+.heade {
+    width: 320px;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+    padding: 15px 24px 0px 20px;
+    background-color: #fff;
+}
+
+/* Affichage coins */
+    
+.coins {
+    color: var(--main-text-color);
+    background-color: var(--coin-color);
+    width: fit-content;
+    height: 27px;
+    display: flex;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    border-style: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-right: 130px;
+}
+
+/* valeur coins */
+
+.point {
+    color: var(--coin-color);
+    background-color: var(--main-text-color);
+    border-radius: 50%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    height: 21px;
+    width: 21px;
+    
+}
+
+.iconb {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.position {
+    position: absolute;
+    width: 281px;
+    height: 27px;
+    left: 20px;
+    top: 33px;
+}
+
+/* BARRE DE NAVIGATION */
+      
+.navbar2 {
+    position:fixed;
+    bottom: 120px;
+    right: 3px;
+
+    width: 300px;
+    height: 78px;
+    left: calc(50% - 300px/2 + 1px);
+    top: 463px;
+
+}
+      
+.bar {
+    height: 46px;
+    width: 288px;
+    background-image: url("data:image/svg+xml,%3Csvg width='288' height='46' viewBox='0 0 288 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M143.5 33C158.688 33 171 20.6878 171 5.5C171 3.61644 170.811 1.7771 170.45 0H268C279.046 0 288 8.95431 288 20V26C288 37.0457 279.046 46 268 46H20C8.9543 46 0 37.0457 0 26V20C0 8.95431 8.95431 0 20 0H116.55C116.189 1.7771 116 3.61644 116 5.5C116 20.6878 128.312 33 143.5 33Z' fill='black'/%3E%3C/svg%3E ");  background-position: 50% 50%;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1.2fr .1fr 1.7fr .1fr 1.2fr
+}
+      
+.icons {
+    display: inline-block;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+      
+.circle {
+    position: absolute;
+    top: -17px;
+    left: 48%;
+    margin-left: -22px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clicked {
+    background: var(--clicked-color);
+}
