@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap');
+
+/* STYLE BUTTON PRIMARY */
+
+.button {
+    display: flex;
+    border-radius: 40px;
+    padding: 3px 10px 3px 10px;
+    border-style: none;
+    background-color: var(--main-color);
+    color: var(--main-text-color);
+    width: fit-content;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.button:active {
+    background-color: var(--clicked-color);
+    color: var(--clicked-text-color);
+}
+
+/* STYLE BUTTON SECONDARY */
+
+.button2 {
+    display: flex;
+    border-radius: 40px;
+    padding: 3px 10px 3px 10px;
+    border-style: none;
+    background-color: var(--main-text-color);
+    color: var(--clicked-text-color);
+    width: fit-content;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.button2:active {
+    background-color: var(--clicked-color);
+    color: var(--clicked-text-color);
+}
+
+/* STYLE BUTTON point */
+
+.buttonp {
+    display: flex;
+    border-radius: 40px;
+    border-style: none;
+    padding: 3px 10px 3px 10px;
+    background-color: var(--clicked-color);
+    color: var(--main-color);
+    width: fit-content;
+}
+
+/* STYLE BUTTON nombre de porteurs */
+
+.buttonv {
+    display: flex;
+    border-radius: 40px;
+    border-style: none;
+    padding: 6px 6px 6px 6px;
+    background-color: var(--clicked-color);
+    color: var(--main-color);
+}
+
+/* STYLE COLOR & TEXT */
+
+:root {
+    --main-color: #6333FF;
+    --clicked-color: #DCD3FB;
+    --main-text-color: #FFFFFF;
+    --clicked-text-color: #6333FF;
+    --second-text-color: #000000;
+    --coin-color: #392284;
+    --tag-color: #A4A4A4;
+    --add-tag-color: #EBEBEB;
+}
+
+.text-base{
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: -0.02em;
+}
+.text-tag {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.text-impact {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18.14px;
+}
+
+.text-body {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.text-button {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.text-button2 {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 23px;
+}
+
+.text-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* HEADER WITH POINTS & ICONS */
+
+.heade {
+    width: 320px;
+    height: 83px;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+    margin: 0px 19px 0px 12px;
+    background-color: #fff;
+}
+
+/* Affichage coins */
+    
+.coins {
+    color: var(--main-text-color);
+    background-color: var(--coin-color);
+    width: fit-content;
+    height: 27px;
+    display: flex;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    border-style: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-right: 147px;
+}
+
+/* valeur coins */
+
+.point {
+    color: var(--coin-color);
+    background-color: var(--main-text-color);
+    border-radius: 50%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    height: 21px;
+    width: 21px;
+    
+}
+
+.iconb {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* TITRE DE LA PAGE */
+
+.title {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 70px 19px -130px 24px;
+    gap: 60px;
+}
+
+.title svg {
+    display: flex;
+}
+
+.annonce {
+    position: relative;
+    width: 330px;
+    top: 140px;
+    right: 10px;
+    border: 1px var(--tag-color) solid;
+    padding: 7px 0px 7px 10px;
+    gap: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.annonce img {
+    width: 47px;
+    height: 65px;
+}
+
+.annonce p {
+    margin-top: 0px;
+}
+
+.m1 {
+    width: 148px;
+    height: 85px;
+    position: relative;
+    top: 200px;
+}
+.m2 {
+    width: 148px;
+    height: 99px;
+    position: relative;
+    top: 200px;
+}
+
+/* MESSAGERIE */
+
+.write {
+    position: fixed;
+    top: 465px;
+    margin: 0px 19px 0px 13px;
+
+}
+
+.editable-button2{
+    
+    color:var(--tag-color);
+    
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 10px;
+    gap: 10px;
+    
+    position: relative;
+    width: 200px;
+    height: 44px;
+    left: 40px;
+    top: 44px;
+    
+    background: var(--add-tag-color);
+    border-radius: 5px;
+    border-style: none;
+    
+}
+
