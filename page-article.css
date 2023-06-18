@@ -289,3 +289,50 @@
 .orange4 {
     background-image: url(img/orange\ 4.png);
 }
+
+.description {
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: -0.02em;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+
+}
+
+.legende {
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: -0.02em;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #000000;
+
+    position: absolute;
+    width: 280px;
+    height: 94px;
+    left: calc(50% - 280px/2);
+    top: 694px;
+
+}
+
+.tag2{
+    padding: 3px 10px;
+    
+    width: 53px;
+    height: 21px;
+    
+    /* Secondary 3 - tag */
+    
+    background: #7C7C7C;
+    border-radius: 40px;
+    
+    /* Inside auto layout */
+
+    font-family: 'Prompt';
+    font-style: normal;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 15px;
+    color: var(--main-text-color);
+}
