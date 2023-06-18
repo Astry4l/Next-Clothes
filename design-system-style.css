@@ -595,18 +595,21 @@ body {
     top: -16px;
 }
 
-#pop {
-    position: relative;
-    display: flex;
+.pop {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     top: -96px;
-    left: 75px;
+    left: 750px;
     transition: opacity 200ms;
     visibility: hidden;
     opacity: 0;
 }
+.pop:target{
+    visibility: hidden;
+    opacity: 0;
+} 
+
 
 
 

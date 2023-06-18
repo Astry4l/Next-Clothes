@@ -70,7 +70,7 @@
     --clicked-text-color: #6333FF;
     --second-text-color: #000000;
     --coin-color: #392284;
-    --tag-color: #A4A4A4;
+    --tag-color: #7C7C7C;
     --add-tag-color: #EBEBEB;
 }
 
@@ -121,12 +121,14 @@
     height: 83px;
     position: fixed;
     top: 0px;
+    left: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 13px;
     margin: 0px 19px 0px 12px;
     background-color: #fff;
+    padding-left: 10px;
 }
 
 /* Affichage coins */
@@ -174,7 +176,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 67px 19px -130px 24px;
+    margin: 67px 19px -130px 7px;
     gap: 40px;
 }
 

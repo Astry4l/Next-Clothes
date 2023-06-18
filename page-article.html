@@ -4,9 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="page-article.css">
-    <h1 class="text-title">Manteau long orange</h1>
+    <link rel="stylesheet" href="style-article.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  <span class="title">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" fill="none" viewBox="0 0 20 22">
+        <path stroke="#494C68" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity=".9" stroke-width="1.5" d="m12.5 17.54-5.433-5.582a1.733 1.733 0 0 1 0-2.397L12.5 3.98"/>
+    </svg>
+    <h1 class="text-base text-title">Manteau orange long</h1>
+  </span>
+  <div class="image">
+    <img src="img/orange4.png" alt="">
 
+    <button class="buttonp">5 pts</button>
+
+    <button class="buttonv"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.12467 7.12533L14.2497 3.16699H23.7497L30.8747 7.12533L34.0413 19.0003L27.708 23.7503V34.8337H10.2913V23.7503L3.95801 19.0003L7.12467 7.12533Z" stroke="#6333FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M15.52 20.934L17.314 19.283L18.172 18.516C18.6487 18.1 19.0083 17.7663 19.251 17.515C19.5023 17.2637 19.706 16.995 19.862 16.709C20.018 16.4143 20.096 16.098 20.096 15.76C20.096 15.266 19.9487 14.889 19.654 14.629C19.368 14.3603 18.9563 14.226 18.419 14.226C18.003 14.226 17.5697 14.304 17.119 14.46C16.677 14.6073 16.274 14.8197 15.91 15.097V13.524C16.664 12.9867 17.5913 12.718 18.692 12.718C19.6627 12.718 20.4167 12.978 20.954 13.498C21.4913 14.018 21.76 14.7287 21.76 15.63C21.76 16.0547 21.6777 16.4533 21.513 16.826C21.3483 17.19 21.1143 17.5453 20.811 17.892C20.5077 18.2387 20.096 18.6503 19.576 19.127L17.951 20.635H22.085V22H15.52V20.934Z" fill="#6333FF"/>
+      </svg>
+    </button>
+    <p class="text-base text-body">Déjà porté 2 fois dans votre entourage</p>
+  </div>
+  
+  <span class="TAGbar">
+    <button class="text-base text-tag tag">
+        Orange
+    </button>
+    <button class="text-base text-tag tag">
+      Veste
+    </button>
+    <button class="text-base text-tag tag">
+      M
+    </button>
+    <button class="text-base text-tag tag">
+      Long
+    </button>
+  </span>
+
+  <span class="text-base contact">
+    <img src="img/marcus.png" alt="">
+    <p class="text-impact">Marcùs Tessier</p>
+    <span class="TAGbar2">
+      <button class="text-base text-tag tag2">
+          Location
+      </button>
+      <button class="text-base text-tag tag2">
+        5km
+      </button>
+    </span>
+  </span>
+
+  <p class="text-base text-body announce">Loue le temps d’une soirée ma veste orange de chez Bershka. Idéale pour tenir chaud lors de sorties prolongées dans le froid.</p>
+  <div class="text-base résa">
+    <img class="calendar" src="img/Calendar.png" alt="Calendrier des réservations"/>
+
+    <div class="pop" id="pop1">
+    <div class="date frectangle"><a class="text-button" href="#">20</a></div>
+      <a class="rés" href="messages.html">
+        <button class="text-tag buttonR rés" id="réservation">
+          Réservation
+        </button>
+      </a>
+    </div>
+    <div class="date d1"><input type="checkbox" id="date"></div>
+    <a class="date d2" href="#pop1"><input type="checkbox" id="dat2"></a>
+  </div>
+
+  <span class="disp">
+    <div class="text-base disponibility">
+      <div class="state"></div>
+      <span class="text-button dispo">Non disponible</span>
+    </div>
+    <a href="#">
+      <button class="text-button button">
+        Contacter
+      </button>
+    </a>
+  </span>
+
+  <h3 class="text-base text-button similary">Articles similaires</h3>
+  <span class="TAGbar">
+    <button class="text-base text-tag tag">
+        7km
+    </button>
+    <button class="text-base text-tag tag">
+      Location
+    </button>
+    <button class="text-base text-tag tag">
+      Orange
+    </button>
+    <button id="editable-button" class="editable-button text-base text-tag" contenteditable="true" onclick="clearText()">
+        ajouter_un_tag
+    </button>
+</span>
+
+<span class="similarity">
+  <svg width="24" height="49" viewBox="0 0 24 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_361_4880)">
+      <path d="M24 49L24 0L-3.8147e-06 -1.04907e-06L-5.95656e-06 49L24 49Z" fill="white" fill-opacity="0.01"/>
+      <path d="M15 37.7705L9 25.5205L15 13.2705" stroke="#7C7C7C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_361_4880">
+        <rect width="49" height="24" fill="white" transform="translate(24) rotate(90)"/>
+      </clipPath>
+    </defs>
+    </svg>
+    
+    <svg width="24" height="49" viewBox="0 0 24 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_361_4879)">
+        <path d="M-2.14186e-06 0L0 49L24 49L24 -1.04907e-06L-2.14186e-06 0Z" fill="white" fill-opacity="0.01"/>
+        <path d="M9 11.2295L15 23.4795L9 35.7295" stroke="#7C7C7C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_361_4879">
+          <rect width="49" height="24" fill="white" transform="translate(0 49) rotate(-90)"/>
+        </clipPath>
+      </defs>
+      </svg>
+  </span>
+
+  <section class="gridcard">
+    <!-- Card vêtement -->
+    <article class="card c7">
+      <!-- Image du vêtement -->
+        <div class="img orange7"></div>
+      <!-- Valeur du vêtement -->
+        <div class="bottom">
+          <div class="valueclothe text-base text-button">6</div>
+      <!-- Nom du vêtement -->
+          <span class="name text-base text-body">Veste</span>
+      <!-- Like -->
+          <div class="like">
+            <input type="checkbox" id="lik1" aria-label="add a like">
+          </div>
+        </div>
+      </article>
+      <!-- Card vêtement -->
+    <article class="card c8">
+      <!-- Image du vêtement -->
+        <div class="img orange8"></div>
+      <!-- Valeur du vêtement -->
+        <div class="bottom">
+          <div class="valueclothe text-base text-button">4</div>
+      <!-- Nom du vêtement -->
+          <span class="name text-base text-body">Manteau</span>
+      <!-- Like -->
+          <div class="like">
+            <input type="checkbox" id="lik1" aria-label="add a like">
+          </div>
+        </div>
+      </article>
+    </section>
+  
+  
+
+
+<div class="heade">
     <button class="coins text-button">
         <article>24</article> <div class="point"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24">
           <g clip-path="url(#a)">
@@ -20,80 +175,103 @@
           </defs>
         </svg></div>
     </button>
-
-    <!-- NAV BAR -->
-
-      <div class="navbar2">
-        <div class="bar">
-          <a class="icons home" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-              <g clip-path="url(#a)">
-                <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
-                <path fill="#fff" d="M4.5 9v12h15V9L12 3 4.5 9Z"/>
-                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 21V9L2 11l10-8 10 8-2.5-2v12h-15Z"/>
-                <path stroke="#fff" stroke-linecap="round" stroke-width="2" d="M4.5 21h15"/>
-              </g>
-              <defs>
-                <clipPath id="a">
-                  <path fill="#fff" d="M0 0h24v24H0z"/>
-                </clipPath>
-              </defs>
-            </svg>
-          </a>
-          <a class="icons map" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-              <g clip-path="url(#a)">
-                <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
-                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 6 2 3v15l6.5 3 7-3 6.5 3V6l-6.5-3-7 3Zm7-3v15m-7-12v15"/>
-                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.25 4.5 8.5 6l7-3 3.25 1.5m-13.5 15L8.5 21l7-3 3.25 1.5"/>
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 0h24v24H0z"/>
-                  </clipPath>
-                </defs>
-            </svg>        
-          </a>
-          
-          <span></span>
-  
-          <a class="icons agenda" href="#">
-            <svg class="icons agenda" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-              <g clip-path="url(#a)">
-                <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
-                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 4H3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1ZM2 10h20M2 16h20M8.5 2v4m7-4v4m-7 4v12m7-12v12M22 6.5v13M2 6.5v13M7 22h10"/>
-              </g>
-              <defs>
-                <clipPath id="a">
-                  <path fill="#fff" d="M0 0h24v24H0z"/>
-                </clipPath>
-              </defs>
-            </svg>
-          </a>
-          <a class="icons account" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-              <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm9 12a9 9 0 1 0-18 0"/>
-            </svg>
-          </a>
-        </div>
-        <div class="circle">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 22 22">
-            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.333 2.75H3.667a.917.917 0 0 0-.917.917v3.666M7.333 19.25H3.667a.917.917 0 0 1-.917-.916v-3.667m11.917 4.583h3.666c.507 0 .917-.41.917-.916v-3.667M14.667 2.75h3.666c.507 0 .917.41.917.917v3.666M14.667 11H7.333M11 14.666V7.333"/>
-          </svg>
-        </div>
-      </div>
-
-      <!-- Card vêtement -->
-    <article class="card">
-    <!-- Image du vêtement -->
-        <div class="img orange4"></div>
+      <!-- SEARCH ICON -->
+    <a class="iconb" href="">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_473_5591)">
+          <path d="M20 0H0V20H20V0Z" fill="white" fill-opacity="0.01"/>
+          <path d="M8.74984 15.8337C12.6618 15.8337 15.8332 12.6623 15.8332 8.75033C15.8332 4.83833 12.6618 1.66699 8.74984 1.66699C4.83784 1.66699 1.6665 4.83833 1.6665 8.75033C1.6665 12.6623 4.83784 15.8337 8.74984 15.8337Z" stroke="#1B1B1B" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M11.1071 5.97629C10.5039 5.37308 9.67057 5 8.75011 5C7.82965 5 6.99632 5.37308 6.39307 5.97629" stroke="#1B1B1B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13.8423 13.8428L17.3778 17.3783" stroke="#1B1B1B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_473_5591">
+            <rect width="20" height="20" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </a>
+      <!-- MESSAGE ICON -->
+    <a class="iconb" href="message.html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+        <g clip-path="url(#a)">
+          <path fill="#fff" fill-opacity=".01" d="M20 0H0v20h20V0Z"/>
+          <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M1.667 2.5h16.666V15h-6.25L10 17.083 7.917 15h-6.25V2.5Z"/>
+          <path stroke="#000" stroke-linecap="round" stroke-width="1.5" d="M9.584 8.75h.834m3.332 0h.833m-9.166 0h.833"/>
+        </g>
+        <defs>
+          <clipPath id="a">
+            <path fill="#fff" d="M0 0h20v20H0z"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </a>
     
-    <p class="legende">Déjà porté 2 fois dans votre entourage</p>
-    <p class="description">Loue le temps d’une soirée ma veste orange de chez Bershka. Idéale pour tenir chaud lors de sortie prolongées dans le froid. </p>
-    <p class="tag2">manteau</p>
+</div>
 
-</head>
-<body>
+<div class="navbar5">
+    <div class="bar">
+      <a class="icons home" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <g clip-path="url(#a)">
+            <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 21V9L2 11l10-8 10 8-2.5-2v12h-15Z"/>
+            <path stroke="#fff" stroke-linecap="round" stroke-width="2" d="M4.5 21h15"/>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff" d="M0 0h24v24H0z"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <a class="icons map" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <g clip-path="url(#a)">
+            <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 6 2 3v15l6.5 3 7-3 6.5 3V6l-6.5-3-7 3Zm7-3v15m-7-12v15"/>
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.25 4.5 8.5 6l7-3 3.25 1.5m-13.5 15L8.5 21l7-3 3.25 1.5"/>
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff" d="M0 0h24v24H0z"/>
+              </clipPath>
+            </defs>
+        </svg>        
+      </a>
+      
+      <span></span>
+
+      <a class="icons agenda" href="#">
+        <svg class="icons agenda" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <g clip-path="url(#a)">
+            <path fill="#fff" fill-opacity=".01" d="M24 0H0v24h24V0Z"/>
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 4H3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1ZM2 10h20M2 16h20M8.5 2v4m7-4v4m-7 4v12m7-12v12M22 6.5v13M2 6.5v13M7 22h10"/>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff" d="M0 0h24v24H0z"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <a class="icons account" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/>
+          <path fill="#fff" d="M21 22a9 9 0 1 0-18 0"/>
+          <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 22a9 9 0 1 0-18 0"/>
+        </svg>
+      </a>
+    </div>
+    <div class="circle">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 22 22">
+        <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.333 2.75H3.667a.917.917 0 0 0-.917.917v3.666M7.333 19.25H3.667a.917.917 0 0 1-.917-.916v-3.667m11.917 4.583h3.666c.507 0 .917-.41.917-.916v-3.667M14.667 2.75h3.666c.507 0 .917.41.917.917v3.666M14.667 11H7.333M11 14.666V7.333"/>
+      </svg>
+    </div>
+  </div>
+
+    
+
     
 </body>
 </html>

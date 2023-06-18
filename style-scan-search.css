@@ -70,7 +70,7 @@
     --clicked-text-color: #6333FF;
     --second-text-color: #000000;
     --coin-color: #392284;
-    --tag-color: #A4A4A4;
+    --tag-color: #7C7C7C;
     --add-tag-color: #EBEBEB;
 }
 
@@ -121,12 +121,14 @@
     height: 83px;
     position: fixed;
     top: 0px;
+    left: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 13px;
     margin: 0px 19px 0px 12px;
     background-color: #fff;
+    padding-left: 10px;
 }
 
 /* Affichage coins */
@@ -227,7 +229,6 @@
     border-radius: 40px;
     border-style: none;
     margin-right: 55px;
-
 }
 
 /* SAVE ICON SYSTEM */
@@ -341,11 +342,11 @@
 .card {
     width: 134px;
     height: 205px;
-    top: 50px;
     background-color: #fff;
     border-radius: 10px;
     position: relative;
     top: 200px;
+
 }
 
 .c1 {
@@ -453,7 +454,8 @@
     padding: 1px 5px 0px 5px;
     border-radius: 5px;
     text-align: center;
-    margin-left: -29px;
+    position: absolute;
+    left: 0px;
 }
 
 .name {
@@ -461,8 +463,8 @@
     text-align: center;
     height: fit-content;
     margin-top: 2.5px;
-    margin-left: 5px;
-    margin-right: 17px;
+    position: absolute;
+    left: 30px;
 
 }
 
@@ -472,6 +474,9 @@
     display: flex;
     justify-content: center;
     margin-right: -30px;
+    position: absolute;
+    left: 112px;
+
 }
 
 .like input {
