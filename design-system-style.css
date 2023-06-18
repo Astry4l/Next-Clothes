@@ -772,6 +772,52 @@ border-radius: 10px;
     background-color: var(--clicked-color);
   }
   
-  
+/* CARD CLOTHE POPUP */
+.headpop {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    margin: 5px 13px 5px 17px;
+}
+
+.popup {
+    width: 280px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+}
+
+.close {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.popup img {
+    width: 231px;
+    height: 301px;
+    position: relative;
+    margin: -5px 24px 0px 25px; 
+}
+
+.announce {
+    position: relative;
+    margin: 15px 24px -10px 25px;
+}
+
+.TAGbar {
+    width: fit-content;
+    height: 21px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 129px;
+    gap: 12px;
+    margin: -115px 24px -10px 25px;
+}
   
   
