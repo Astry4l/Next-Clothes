@@ -92,6 +92,14 @@
     line-height: 30px;
 }
 
+a {
+    text-decoration: none;
+}
+
+body {
+    transition: 1.5s;
+}
+
 /* HEADER WITH POINTS & ICONS */
 
 .heade {
@@ -526,7 +534,7 @@
 
 /* BARRE DE NAVIGATION EN POSITION FIXE */
 
-.navbar5 {
+.navbar {
     position:fixed;
     left: 16px;
     top: 506px;

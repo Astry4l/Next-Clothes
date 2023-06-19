@@ -1,3 +1,7 @@
+body {
+    transition: 0.75s;
+}
+
 /* STYLE BUTTON PRIMARY */
 
 .button {
@@ -28,6 +32,10 @@
     --coin-color: #392284;
     --tag-color: #A4A4A4;
     --add-tag-color: #EBEBEB;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* CROSS ICON */

@@ -114,6 +114,14 @@
     line-height: 30px;
 }
 
+a {
+    text-decoration: none;
+}
+
+body {
+    transition: 0.75s;
+}
+
 /* HEADER WITH POINTS & ICONS */
 
 .heade {

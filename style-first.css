@@ -1,0 +1,10 @@
+svg {
+    position: relative;
+    top: 250px;
+    left: 30px;
+}
+
+body {
+    background-image: url(img/fond.png);
+        transition: 0.75s;  
+}

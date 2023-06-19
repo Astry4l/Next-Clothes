@@ -92,13 +92,76 @@
     line-height: 30px;
 }
 
+a {
+    text-decoration: none;
+}
+
+body {
+    transition: 0.75s;
+}
+
+/* HEADER WITH POINTS & ICONS */
+
+.heade {
+    width: 320px;
+    height: 83px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+    margin: 0px 19px 0px 12px;
+    background-color: #fff;
+    padding-left: 10px;
+}
+
+/* Affichage coins */
+    
+.coins {
+    color: var(--main-text-color);
+    background-color: var(--coin-color);
+    width: fit-content;
+    height: 27px;
+    display: flex;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    border-style: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-right: 147px;
+}
+
+/* valeur coins */
+
+.point {
+    color: var(--coin-color);
+    background-color: var(--main-text-color);
+    border-radius: 50%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    height: 21px;
+    width: 21px;
+    
+}
+
+.iconb {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 /* TITRE DE LA PAGE */
 
 .title {
     position: absolute;
     display: flex;
     flex-direction: row;
-    margin: 15px 19px 20px 7px;
+    margin: 50px 19px 20px 7px;
     gap: 16px;
 }
 
@@ -132,8 +195,8 @@
 .indic {
     position: relative;
     display: flex;
-    top: 120px;
-    margin: 10px 19px 150px 19px;
+    top: 160px;
+    margin: 10px 19px 180px 19px;
 
 }
 
@@ -143,7 +206,7 @@
 
 .résa {
     position: relative;
-    margin: 25px 21px -120px 13px;
+    margin: 100px 21px -120px 13px;
 }
 
 .calendar{
@@ -272,7 +335,7 @@
 .message {
     display: flex;
     justify-content: center;
-    margin: 30px 21px 0px 18px;
+    margin: 20px 21px 0px 18px;
 
 }
 

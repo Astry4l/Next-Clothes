@@ -116,6 +116,13 @@
     line-height: 30px;
 }
 
+a {
+    text-decoration: none;
+}
+
+body {
+    transition: 0.75s;
+}
 
 .dame{
     position: absolute;
